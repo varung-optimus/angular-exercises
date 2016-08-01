@@ -1,8 +1,9 @@
 # Angular Exercises
+## Below configuration is application for each exercise folder
 
 ### Install Dependencies
 
-We have preconfigured `npm` to automatically run `bower` so we can simply do:
+I have preconfigured `npm` to automatically run `bower` so we can simply do:
 
 ```
 npm install
@@ -20,7 +21,7 @@ it easier to serve the files by a webserver.*
 
 ### Run the Application
 
-We have preconfigured the project with a simple development web server.  The simplest way to start
+I have preconfigured the project with a simple development web server.  The simplest way to start
 this server is:
 
 ```
@@ -39,8 +40,4 @@ For more information on AngularJS please check out http://angularjs.org/
 [bower]: http://bower.io
 [npm]: https://www.npmjs.org/
 [node]: http://nodejs.org
-[protractor]: https://github.com/angular/protractor
-[jasmine]: http://pivotal.github.com/jasmine/
-[karma]: http://karma-runner.github.io
-[travis]: https://travis-ci.org/
 [http-server]: https://github.com/nodeapps/http-server
