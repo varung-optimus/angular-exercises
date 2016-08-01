@@ -1,8 +1,9 @@
 # Exercise 2
 
-Pass data between controllers without using $rootScope
+Implementing Page Transitions
+
 ```
-Search data from home page is shared to search results page
+In this exercise, page transition is implemented in between home page and search page
 ```
 
 ### Install Dependencies
