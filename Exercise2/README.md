@@ -1,5 +1,7 @@
 # Exercise 2
 
+Pass data between controllers without using $rootScope
+
 ### Install Dependencies
 
 We have preconfigured `npm` to automatically run `bower` so we can simply do:
