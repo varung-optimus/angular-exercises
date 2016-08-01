@@ -1,0 +1,19 @@
+<form class="navbar-form navbar-left" role="search">
+    <strong>
+        Problem Statement:
+    </strong>
+     <p>
+        Provide example on how to pass data between page controllers. Have an input field in one page of which contents is displayed
+        in the second page. Please do not use $rootScope.
+    </p>
+   
+    <hr/>
+    <strong>
+        Solution:
+    </strong>
+    <br/>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" ng-model="home.name">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="home.search()">Submit</button>
+</form>
