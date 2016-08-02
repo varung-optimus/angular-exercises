@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in items" class="navbar-item" ui-sref-active="active">
-          <a ui-sref="app.{{ item | lowercase }}">{{ item }}</a>
+          <a ui-sref="app.{{ item.name | lowercase }}">{{ item.title }}</a>
         </li>
       </ul>
     </div>

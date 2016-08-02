@@ -1,9 +1,9 @@
-# Exercise 3
+# Exercise 4
 
-Implementing Grid with sorting and filtering
+Grid with Sorting and Filtering
 
 ```
-Array with sorting and filtering is implemented
+Create an array of 50 items, each item having 3 properties. Create an option to sort the array by one or two properties. Make the array be filterable by a search input.
 ```
 
 ### Install Dependencies

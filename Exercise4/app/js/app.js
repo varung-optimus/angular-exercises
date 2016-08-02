@@ -1,1 +1,1 @@
-var app = angular.module('app', ['ngAnimate', 'ui.router']);
+var app = angular.module('app', ['ngAnimate', 'ui.router', 'ui.grid']);
