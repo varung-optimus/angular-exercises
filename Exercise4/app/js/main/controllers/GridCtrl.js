@@ -1,12 +1,31 @@
-app.controller('GridCtrl', ['$scope', '$http', function ($scope, $http) {
+app.controller('GridCtrl', ['$scope', '$http', 'uiGridConstants', function ($scope, $http, uiGridConstants) {
     $scope.gridOptions1 = {};
 
     $scope.gridOptions1 = {
         enableSorting: true,
+        enableFiltering: true,
         columnDefs: [
-            { displayName: "Student Name", field: "name" },
-            { displayName: "Country", field: "country" },
-            { displayName: "Skill", field: "skill" }
+            {
+                displayName: "Student Name",
+                field: "name",
+                filter: {
+                    placeholder: 'Filter by Name'
+                }
+            },
+            {
+                displayName: "Country", 
+                field: "country", 
+                filter: {
+                    placeholder: 'Filter by Country'
+                }
+            },
+            {
+                displayName: "Skill",
+                field: "skill",
+                filter: {
+                    placeholder: 'Filter by Skill'
+                }
+            }
         ]
     };
 
