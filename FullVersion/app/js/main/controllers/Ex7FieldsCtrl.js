@@ -1,5 +1,5 @@
 define(['app'], function (app) {
-    app.controller('FieldsCtrl', ['$scope', function ($scope) {
+    app.controller('Ex7FieldsCtrl', ['$scope', function ($scope) {
         var vm = this;
         // Initialize the values as 0
         vm.first = 0;

@@ -123,8 +123,8 @@ function (angularAMD) {
                 .state('app.ex7', angularAMD.route({
                     url: "/ex7",
                     templateUrl: 'js/main/templates/fields.tpl.html',
-                    controllerUrl: 'FieldsCtrl',
-                    controller: 'FieldsCtrl',
+                    controllerUrl: 'Ex7FieldsCtrl',
+                    controller: 'Ex7FieldsCtrl',
                     controllerAs: 'fields'
                 })) 
                 // Exercise 8
@@ -132,8 +132,8 @@ function (angularAMD) {
                 .state('app.ex8', angularAMD.route({
                     url: "/ex8",
                     templateUrl: 'js/main/templates/dynamic.tpl.html',
-                    controllerUrl: 'DynamicFieldCtrl',
-                    controller: 'DynamicFieldCtrl',
+                    controllerUrl: 'Ex8DynamicFieldCtrl',
+                    controller: 'Ex8DynamicFieldCtrl',
                     controllerAs: 'dynamic'
                 })); 
                 // {

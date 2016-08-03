@@ -32,18 +32,18 @@ require.config({
         // "PhoneMaskCtrl": "js/main/controllers/PhoneMaskCtrl",
         // Exercise 6
         // Exercise 7
-        "FieldsCtrl": "js/main/controllers/FieldsCtrl",
+        "Ex7FieldsCtrl": "js/main/controllers/Ex7FieldsCtrl",
         // Exercise 8
-        "DynamicFieldCtrl": "js/main/controllers/DynamicFieldCtrl",
+        "Ex8DynamicFieldCtrl": "js/main/controllers/Ex8DynamicFieldCtrl",
         // ************
         // End Controllers
+
         // ************
         // ************
         // Directives
         // ************
         "phoneDirective": "js/main/directives/phone",
         "moveNextOnMaxlength": "js/main/directives/moveNextOnMaxlength"
-
         // ************
         // End Directives
         // ************
