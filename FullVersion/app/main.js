@@ -4,10 +4,15 @@ require.config({
 
     // alias libraries paths
     paths: {
+        "jquery": "//code.jquery.com/jquery-2.2.4.min",
         "angular": "js/libs/angular",
         "ui-router": "js/libs/angular-ui-router",
         "angularAMD": "js/libs/angularAMD",
-        "ui-grid": "//ui-grid.info/release/ui-grid",
+        "ui-grid": "js/libs/ui-grid",
+        "angular-input-masks": "js/libs/angular-input-masks/angular-input-masks-standalone",
+        'moment': 'js/libs/moment',
+        'string-mask': 'js/libs/string-mask',
+        'br-validations': 'js/libs/br-validations',
         // Core
         "coreState": "js/core/state",
         // ************
@@ -23,8 +28,24 @@ require.config({
         "Ex2SearchCtrl": "js/main/controllers/Ex2SearchCtrl",
         // Exercise 4
         "Ex4GridCtrl": "js/main/controllers/Ex4GridCtrl",
+        // Exercise 5
+        // "PhoneMaskCtrl": "js/main/controllers/PhoneMaskCtrl",
+        // Exercise 6
+        // Exercise 7
+        "FieldsCtrl": "js/main/controllers/FieldsCtrl",
+        // Exercise 8
+        "DynamicFieldCtrl": "js/main/controllers/DynamicFieldCtrl",
         // ************
         // End Controllers
+        // ************
+        // ************
+        // Directives
+        // ************
+        "phoneDirective": "js/main/directives/phone",
+        "moveNextOnMaxlength": "js/main/directives/moveNextOnMaxlength"
+
+        // ************
+        // End Directives
         // ************
     },
 
@@ -33,8 +54,9 @@ require.config({
             deps: ['angular'],
             exports: 'ui-grid',
         },
+        // 'angular-input-masks': ['angular', 'string-mask', 'moment', 'br-validations'],
         "angularAMD": ["angular"],
-        "ui-router": ["angular"],
+        "ui-router": ["angular"]
     },
 
     deps: ['app']

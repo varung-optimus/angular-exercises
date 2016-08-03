@@ -6,13 +6,15 @@ define(['app'], function (app) {
         }, {
                 name: 'ex4',
                 title: 'Exercise 4'
-            }, {
-                name: 'ex5',
-                title: 'Exercise 5'
-            }, {
-                name: 'ex6',
-                title: 'Exercise 6'
-            }, {
+            }, 
+            // {
+            //     name: 'ex5',
+            //     title: 'Exercise 5'
+            // }, {
+            //     name: 'ex6',
+            //     title: 'Exercise 6'
+            // }, 
+            {
                 name: 'ex7',
                 title: 'Exercise 7'
             }, {

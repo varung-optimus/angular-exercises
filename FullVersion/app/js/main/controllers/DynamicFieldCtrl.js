@@ -1,4 +1,4 @@
-define(['app'], function (app) {
+define(['app', 'moveNextOnMaxlength'], function (app) {
     app.controller('DynamicFieldCtrl', ['$scope', function ($scope) {
         var vm = this;
         vm.updateCursor = function () {

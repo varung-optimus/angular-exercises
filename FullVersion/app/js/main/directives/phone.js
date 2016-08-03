@@ -1,9 +1,11 @@
-app.directive('inputPhone', phoneDirective);
+define(['app'], function (app) {
+    app.directive('inputPhone', phoneDirective);
 
-function phoneDirective() {
-    return {
-        require: 'ngModel',
-        restrict: 'E',
-        templateUrl: 'js/main/templates/directives/phone.directive.tpl.html'
-    }
-};
+    function phoneDirective() {
+        return {
+            require: 'ngModel',
+            restrict: 'E',
+            templateUrl: 'js/main/templates/directives/phone.directive.tpl.html'
+        }
+    };
+}); 

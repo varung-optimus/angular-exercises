@@ -1,5 +1,7 @@
 
-define(["angularAMD", "angular", "ui-router", "ui-grid"], function (angularAMD) {
+define(["angularAMD", "angular", "ui-router", "ui-grid"], 
+// "angular-input-masks"], 
+function (angularAMD) {
 
     var app = angular.module('app', ["ui.router", "ui.grid"]);
 
@@ -98,12 +100,47 @@ define(["angularAMD", "angular", "ui-router", "ui-grid"], function (angularAMD) 
                     controllerUrl: 'Ex4GridCtrl',
                     controller: 'Ex4GridCtrl',
                     controllerAs: 'grid'
-                }));
+                }))
+                // Exercise 5
+                // Format phone number as (999) 999-9999
+                // .state('app.ex5', angularAMD.route({
+                //     url: "/ex5",
+                //     templateUrl: 'js/main/templates/phone.mask.tpl.html',
+                //     controllerUrl: 'PhoneMaskCtrl',
+                //     controller: 'PhoneMaskCtrl',
+                //     controllerAs: 'phone'
+                // }))
+                // // Exercise 6
+                // // Format currency as $ 1,234
+                // .state('app.currency', {
+                //     url: '/currency',
+                //     templateUrl: 'js/main/templates/currency.mask.tpl.html',
+                //     controller: 'CurrencyMaskCtrl',
+                //     controllerAs: 'currency'
+                // })
+                // Exercise 7
+                // Input fields and additional field logic
+                .state('app.ex7', angularAMD.route({
+                    url: "/ex7",
+                    templateUrl: 'js/main/templates/fields.tpl.html',
+                    controllerUrl: 'FieldsCtrl',
+                    controller: 'FieldsCtrl',
+                    controllerAs: 'fields'
+                })) 
+                // Exercise 8
+                // Dynamic field to max 5 length
+                .state('app.ex8', angularAMD.route({
+                    url: "/ex8",
+                    templateUrl: 'js/main/templates/dynamic.tpl.html',
+                    controllerUrl: 'DynamicFieldCtrl',
+                    controller: 'DynamicFieldCtrl',
+                    controllerAs: 'dynamic'
+                })); 
                 // {
-                //     url: '/ex4',
-                //     templateUrl: 'js/main/templates/grid.tpl.html',
-                //     controller: 'GridCtrl',
-                //     controllerAs: 'grid'
+                //     url: '/ex8',
+                //     templateUrl: 'js/main/templates/dynamic.tpl.html',
+                //     controller: 'DynamicFieldCtrl',
+                //     controllerAs: 'dynamic'
                 // });
         }
     ]);
