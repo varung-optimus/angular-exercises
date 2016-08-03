@@ -21,7 +21,7 @@ function (angularAMD) {
     app.config([
         '$stateProvider', '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
-            $urlRouterProvider.when('', '/ex2');
+            $urlRouterProvider.when('', '/ex1/1');
 
             $stateProvider
                 .state('app', {
@@ -43,14 +43,13 @@ function (angularAMD) {
                     templateUrl: 'js/core/templates/404.tpl.html',
                     controller: 'AppCtrl'
                 })
-                // Exercise 1
                 .state("app.ex1", angularAMD.route({
                     url: "/ex1/{id:int}",
                     templateProvider: function ($stateParams) {
                         if ($stateParams.id === 1) {
-                            return "<div>Hello {{title}}</div>";
+                            return "<div>Hello - {{title}}</div>";
                         }
-                        return "<div>Good bye {{title}}</div>";
+                        return "<div>Good morning - {{title}}</div>";
                     },
                     resolve: {
                         loadController: ['$q', '$stateParams',
@@ -136,12 +135,6 @@ function (angularAMD) {
                     controller: 'Ex8DynamicFieldCtrl',
                     controllerAs: 'dynamic'
                 })); 
-                // {
-                //     url: '/ex8',
-                //     templateUrl: 'js/main/templates/dynamic.tpl.html',
-                //     controller: 'DynamicFieldCtrl',
-                //     controllerAs: 'dynamic'
-                // });
         }
     ]);
 
